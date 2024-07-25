@@ -1,0 +1,166 @@
+/* Estilos generales */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del menú */
+.nav-menu {
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-menu h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.nav-menu .menu {
+    display: flex;
+    flex-wrap: nowrap; 
+}
+
+.nav-menu .menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; 
+    transition: color 0.3s;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.nav-menu .menu a:hover {
+    color: #ff6600;
+}
+.contenedor-prueba2{
+    display: flex;
+}
+.contenedor-prueba2 {
+    width: calc(20%);
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Estilos del contenido principal */
+.main-content {
+    text-align: center;
+    padding-top: 0px; /* Ajusta el padding superior para evitar que el contenido quede detrás del menú fijo */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos de la sección */
+.seccion {
+    padding: 40px 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.seccion-informacion {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-informacion .titulo {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.seccion-informacion p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 5px;
+}
+/*Apertir de aca se configuran las imagenes*/
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contenedor-imagenes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        background-color: #fff;
+    }
+    
+    .container {
+        perspective: 1000px;
+    }
+    
+    .card {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        transform-style: preserve-3d;
+        transform: rotateY(0deg);
+        transition: transform 0.03s;
+    }
+    
+    .card:hover {
+        transform: rotateY(2000deg);
+    }
+    
+    .front, .back {
+        position: absolute;
+        width: 135%;
+        height: 130%;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+    
+    .front img {
+        width: 95%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .back {
+        transform: rotateY(180deg);
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    ul{
+        list-style: none;
+        font-size: 1em;
+        color: #666;
+        line-height: 1.6;
+        padding: 5px;
+    }
+    
